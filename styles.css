@@ -1,0 +1,204 @@
+/* Global Styles */
+
+/* Reset margin and padding for all elements, set box-sizing to border-box */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set global font, text color, and body padding */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+/* Header Styles */
+
+/* Set header background, text color, and padding */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center; /* Center header text */
+}
+
+/* Header title styling */
+header h1 {
+    margin-bottom: 10px;
+}
+.navbar a:hover{
+    color: black;
+}
+
+/* Navigation menu styling */
+header nav ul {
+    list-style: none; /* Remove bullet points */
+}
+
+/* Display nav items inline with spacing */
+header nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+/* Style nav links */
+header nav ul li a {
+    color: #fff;
+    text-decoration: none; /* Remove underline from links */
+}
+/* Style for the profile photo */
+.profile-photo {
+    display: block;
+    margin: 0 auto; /* Center the image */
+    width: 150px; /* Set the width of the image */
+    height: 150px; /* Set the height of the image */
+    border-radius: 50%; /* Make the image circular */
+    object-fit: cover; /* Ensure the image scales properly */
+    margin-bottom: 10px; /* Space between the image and the header */
+}
+
+
+/* Section Styles */
+
+/* General section styling for layout */
+section {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px; /* Rounded corners for sections */
+}
+
+/* Section headings */
+section h2 {
+    margin-bottom: 10px;
+}
+
+/* Unordered list styles within sections */
+ul {
+    list-style: disc; /* Use default bullet points */
+    margin-left: 20px; /* Add left margin to lists */
+}
+
+/* Form Styles */
+
+/* Form layout - stacked with column flex */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Label margins for spacing */
+form label {
+    margin: 10px 0 5px;
+}
+
+/* Style form inputs and textarea */
+form input, form textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px; /* Rounded input borders */
+}
+
+/* Button styling */
+button {
+    padding: 10px;
+    background-color: skyblue;
+    color: #fff;
+    border: none;
+    border-radius: 5px; /* Rounded button corners */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: #555; /* Darker button on hover */
+}
+
+/* Footer Styles */
+
+/* Footer layout and text alignment */
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border-radius: 10px; /* Rounded footer corners */
+}
+
+/* Responsive Design */
+
+/* Tablet view: max-width 768px */
+@media (max-width: 768px) {
+    /* Stack nav items vertically and center them */
+    header nav ul li {
+        display: block;
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    /* Adjust section padding for smaller screens */
+    section {
+        margin: 10px 0;
+        padding: 15px;
+    }
+
+    /* Reduce input padding for smaller screens */
+    form input, form textarea {
+        padding: 8px;
+    }
+
+    /* Adjust button padding for smaller screens */
+    button {
+        padding: 8px;
+    }
+}
+
+/* Mobile view: max-width 480px */
+@media (max-width: 480px) {
+    /* Reduce body padding for smaller screens */
+    body {
+        padding: 10px;
+    }
+
+    /* Reduce header padding and font size */
+    header {
+        padding: 10px;
+    }
+
+    header h1 {
+        font-size: 24px; /* Smaller title font size for mobile */
+    }
+
+    /* Stack nav items and reduce margins */
+    header nav ul li {
+        display: block;
+        margin: 8px 0;
+    }
+
+    /* Further reduce section padding for mobile */
+    section {
+        padding: 10px;
+    }
+
+    /* Reduce input padding for very small screens */
+    form input, form textarea {
+        padding: 6px;
+    }
+
+    /* Smaller button padding for mobile */
+    button {
+        padding: 6px;
+    }
+
+    /* Reduce footer padding and font size for mobile */
+    footer {
+        padding: 8px;
+        font-size: 14px; /* Smaller font size for footer text */
+    }
+}
