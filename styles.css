@@ -20,7 +20,7 @@ body {
 
 /* Set header background, text color, and padding */
 header {
-    background-color: #333;
+    background-color: darkslategray;
     color: #fff;
     padding: 20px;
     text-align: center; /* Center header text */
@@ -29,6 +29,8 @@ header {
 /* Header title styling */
 header h1 {
     margin-bottom: 10px;
+    font-size: 29px;
+    font-weight: 200;
 }
 .navbar a:hover{
     color: black;
@@ -90,6 +92,11 @@ form {
     display: flex;
     flex-direction: column;
 }
+/* Style the contact section */
+#contact {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+}
 
 /* Label margins for spacing */
 form label {
@@ -99,15 +106,16 @@ form label {
 /* Style form inputs and textarea */
 form input, form textarea {
     padding: 10px;
+    width: 70%;
     margin-bottom: 10px;
     border: 1px solid #ccc;
-    border-radius: 5px; /* Rounded input borders */
+    border-radius: 2px; /* Rounded input borders */
 }
 
 /* Button styling */
 button {
     padding: 10px;
-    background-color: skyblue;
+    background-color:darkslategray;
     color: #fff;
     border: none;
     border-radius: 5px; /* Rounded button corners */
@@ -116,7 +124,7 @@ button {
 
 /* Button hover effect */
 button:hover {
-    background-color: #555; /* Darker button on hover */
+    background-color: green; /* Darker button on hover */
 }
 
 /* Footer Styles */
@@ -126,7 +134,7 @@ footer {
     text-align: center;
     margin-top: 20px;
     padding: 10px;
-    background-color: #333;
+    background-color: darkslategrey;
     color: #fff;
     border-radius: 10px; /* Rounded footer corners */
 }
@@ -190,6 +198,7 @@ footer {
     form input, form textarea {
         padding: 6px;
     }
+    
 
     /* Smaller button padding for mobile */
     button {
